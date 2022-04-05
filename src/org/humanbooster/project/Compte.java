@@ -1,6 +1,6 @@
 package org.humanbooster.project;
 
-public class Compte {
+public abstract class Compte {
     private int id;
     protected float solde;
     private static int countComptes;
@@ -16,7 +16,7 @@ public class Compte {
     }
 
     public static void main(String[] args) {
-       Compte c1 = new Compte(500);
+       Compte c1 = new ComptePayant(500);
         c1.verser(30);
         c1.retirer(400);
         c1.retirer(150);
