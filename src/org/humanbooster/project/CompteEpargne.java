@@ -10,15 +10,17 @@ public class CompteEpargne extends Compte{
 
     public float calculInterets(){
         interets = solde * taux;
-        System.out.println("les intérêts sont de l'ordre de : "+ interets);
+        solde += interets;
+        System.out.println("les intérêts sont de l'ordre de : "+ interets +" et votre solde est de "+solde);
+
         return interets;
     }
-
 
     @Override
     public String toString() {
         return "CompteEpargne{" +
-                "taux=" + taux +
+                "solde=" + solde +
+                ", taux=" + taux +
                 ", interets=" + interets +
                 '}';
     }

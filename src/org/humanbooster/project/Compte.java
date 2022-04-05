@@ -20,13 +20,13 @@ public class Compte {
         c1.verser(30);
         c1.retirer(400);
         c1.retirer(150);
-        Compte c10 = new Compte(50);
+        /*Compte c10 = new Compte(50);
         Compte c11 = new Compte(400);
         Compte c12 = new Compte(200);
         System.out.println(c1);
         System.out.println(c10);
         System.out.println(c11);
-        System.out.println(c12);
+        System.out.println(c12);*/
 
         CompteEpargne c2 = new CompteEpargne(500);
         c2.calculInterets();

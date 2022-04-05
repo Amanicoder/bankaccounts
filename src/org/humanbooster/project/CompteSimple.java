@@ -12,14 +12,15 @@ public class CompteSimple extends Compte{
         this.decouvert = decouvert;
     }
 
-    public float retirer(float montant){
-        if (montant <= (solde+decouvert)) {
-            solde = solde - montant;
-        } else {
-            System.out.println("solde insuffisant compte simple : " + solde);
-        }
-        System.out.println("solde compte simple = " + solde);
-        return solde;
+    @Override
+    public float retirer(float montant) {
+            if (montant <= (solde+decouvert)) {
+                solde = solde - montant;
+            } else {
+                System.out.println("solde insuffisant compte simple : " + solde);
+            }
+            System.out.println("solde compte simple = " + solde);
+            return solde;
     }
 
     @Override
