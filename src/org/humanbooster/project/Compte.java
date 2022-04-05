@@ -4,7 +4,6 @@ public abstract class Compte {
     private int id;
     protected float solde;
     private static int countComptes;
-    private static float montant;
 
     public Compte() {
         this.id = ++countComptes;
@@ -40,6 +39,7 @@ public abstract class Compte {
         c4.verser(60);
         c4.retirer(550);
     }
+
     public int getId() {
         return id;
     }
